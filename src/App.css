@@ -1,0 +1,51 @@
+:root{
+  --width: 400px;
+  --height: 500px;
+  --font: 36px;
+}
+@media only screen and (max-width: 770px) {
+  :root{--width: 300px;
+  --height: 200px;
+  --font: 28px;
+  }
+}
+@media only screen and (max-width: 600px){
+  :root{
+    --width: 400px;
+  --height: 300px;
+  --font: 34px;
+  }
+  .app{
+    flex-direction: column;
+  }
+}
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  background-color: black;
+}
+.media-container {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  border: 2px solid #50e0ff;
+}
+.favorite-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+img,
+video {
+  width: var(--width);
+  height: var(--height);
+}
+.title {
+  font-size: var(--font);
+  color: #50e0ff;
+}
